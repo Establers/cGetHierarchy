@@ -12,6 +12,14 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "cscopeCallHierarchy",
+          "name": "Cscope Call Hierarchy"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "extension.findCallHierarchy",
@@ -28,6 +36,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.13",
     "@types/mocha": "^10.0.9",
     "@types/node": "20.x",
     "@types/vscode": "^1.95.0",
@@ -39,6 +48,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "cgethierarchy": "file:"
+    "cgethierarchy": "file:",
+    "lodash": "^4.17.21"
   }
 }
