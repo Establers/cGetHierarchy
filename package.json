@@ -12,8 +12,17 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "cscopeViewContainer",
+          "title": "Cscope",
+          "icon": "resources/icons/pepe_christmas.svg"
+        }
+      ]
+    },
     "views": {
-      "explorer": [
+      "cscopeViewContainer": [
         {
           "id": "cscopeCallHierarchy",
           "name": "Cscope Call Hierarchy"
